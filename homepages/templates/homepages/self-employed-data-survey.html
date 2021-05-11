@@ -1,0 +1,330 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <link rel="icon" href="{% static 'homepages/images/fav-ethereum.png' %}" type="image/x-icon" />
+	<title>Ruswift - Self-Employed Data Survey</title>
+	<!-- Mobile Specific Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!-- Font-->
+	<link rel="stylesheet" type="text/css" href="{% static 'homepages/css/opensans-font.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'homepages/fonts/material-design-iconic-font/css/material-design-iconic-font.min.css' %}">
+	<!-- Main Style Css -->
+    <link rel="stylesheet" href="{% static 'homepages/css/user-data-survey-style.css' %}"/>
+</head>
+<body>
+	<div class="page-content">
+		<div class="form-v1-content">
+			<div class="wizard-form">
+		        <form class="form-register" action="#" method="post">
+		        	<div id="form-total">
+						<!-- SECTION 1 -->
+			            <h2>
+			            	<p class="step-icon"><span>01</span></p>
+			            	<span class="step-text">Income Information</span>
+			            </h2>
+			            <section style="min-height: 415px;">
+			                <div class="inner">
+			                	<div class="wizard-header">
+									<h3 class="heading">Income Information</h3>
+									<p>Please enter your information and proceed to the next step so we can build your accounts. </p>
+								</div>
+								<div class="form-row">
+									<div class="form-holder">
+										<fieldset>
+											<legend>Income</legend>
+											<input type="Number" class="form-control" id="income" name="income" placeholder="Income" required>
+										</fieldset>
+									</div>
+									<div class="form-holder">
+										<fieldset>
+											<legend>Investments</legend>
+											<input type="Number" class="form-control" id="investments" name="investments" placeholder="Investments" required>
+										</fieldset>
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-holder">
+										<fieldset>
+											<legend>No. of EMI's</legend>
+											<input type="Number" class="form-control" id="emi_no" name="emi_no" placeholder="No. of EMI's" required>
+										</fieldset>
+									</div>
+									<div class="form-holder">
+										<fieldset>
+											<legend>Total EMI Amount</legend>
+											<input type="Number" class="form-control" id="emi_amt" name="emi_amt" placeholder="Total EMI Amount" required>
+										</fieldset>
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-holder">
+										<fieldset>
+											<legend>No. of Dependents</legend>
+											<input type="Number" class="form-control" id="dependents_no" name="dependents_no" placeholder="No. of Dependents" required>
+										</fieldset>
+									</div>
+									<div class="form-holder">
+										<fieldset>
+											<legend>Total Dependent Cost</legend>
+											<input type="Number" class="form-control" id="dependents_cost" name="dependents_cost" placeholder="Total Dependent Cost" required>
+										</fieldset>
+									</div>
+								</div>
+							</div>
+			            </section>
+						<!-- SECTION 2 -->
+			            <h2>
+			            	<p class="step-icon"><span>02</span></p>
+			            	<span class="step-text">House Expenses</span>
+			            </h2>
+			            <section>
+			                <div class="inner">
+			                	<div class="wizard-header">
+									<h3 class="heading">House Expenses</h3>
+									<p>Please enter your infomation and proceed to the next step so we can build your accounts. </p>
+								</div>
+								<div class="form-row">
+									<div class="form-holder form-holder-2">
+										<fieldset>
+											<legend>House Rent</legend>
+											<input type="Number" class="form-control" id="rent" name="rent" placeholder="House Rent" required>
+										</fieldset>
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-holder">
+										<fieldset>
+											<legend>Electricity Bill</legend>
+											<input type="Number" class="form-control" id="electricity" name="electricity" placeholder="Electricity Bill" required>
+										</fieldset>
+									</div>
+									<div class="form-holder">
+										<fieldset>
+											<legend>Water Bill</legend>
+											<input type="Number" class="form-control" id="water" name="water" placeholder="Water Bill" required>
+										</fieldset>
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-holder form-holder-2">
+										<fieldset>
+											<legend>Grocery</legend>
+											<input type="Number" class="form-control" id="grocery" name="grocery" placeholder="Grocery" required>
+										</fieldset>
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-holder form-holder-2">
+										<fieldset>
+											<legend>Medications</legend>
+											<input type="Number" class="form-control" id="medication" name="medication" placeholder="Medications" required>
+										</fieldset>
+									</div>
+								</div>
+							</div>
+			            </section>
+						<!-- SECTION 3 -->
+			            <h2>
+			            	<p class="step-icon"><span>03</span></p>
+			            	<span class="step-text">Entertainment Charges</span>
+			            </h2>
+			            <section>
+			                <div class="inner">
+			                	<div class="wizard-header">
+									<h3 class="heading">Entertainment Charges</h3>
+									<p>Please enter your infomation and proceed to the next step so we can build your accounts. </p>
+								</div>
+								<div class="form-row">
+									<div class="form-holder">
+										<fieldset>
+											<legend>Data / Phone Charges</legend>
+											<input type="Number" class="form-control" id="data_charges" name="data_charges" placeholder="Data / Phone Charges" required>
+										</fieldset>
+									</div>
+									<div class="form-holder">
+										<fieldset>
+											<legend>TV Subscription</legend>
+											<input type="Number" class="form-control" id="tv" name="tv" placeholder="TV Subscription" required>
+										</fieldset>
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-holder">
+										<fieldset>
+											<legend>Movies/Month</legend>
+											<input type="Number" class="form-control" id="movies_month" name="movies_month" placeholder="Movies/Month" required>
+										</fieldset>
+									</div>
+									<div class="form-holder">
+										<fieldset>
+											<legend>Movies Charge</legend>
+											<input type="Number" class="form-control" id="movies_charges" name="movies_charges" placeholder="Movies Charges" required>
+										</fieldset>
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-holder form-holder-2">
+										<fieldset>
+											<legend>Club / Pub Charges</legend>
+											<input type="Number" class="form-control" id="club_charges" name="club_charges" placeholder="Club / Pub Charges" required>
+										</fieldset>
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-holder">
+										<fieldset>
+											<legend>Dinning/Month</legend>
+											<input type="Number" class="form-control" id="dinning_month" name="dinning_month" placeholder="Dinning/Month" required>
+										</fieldset>
+									</div>
+									<div class="form-holder">
+										<fieldset>
+											<legend>Dinning Cost</legend>
+											<input type="Number" class="form-control" id="dinning_charges" name="dinning_charges" placeholder="Dinning Cost" required>
+										</fieldset>
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-holder form-holder-2">
+										<fieldset>
+											<legend>Transport Charges</legend>
+											<input type="Number" class="form-control" id="transport" name="transport" placeholder="Transport Charges" required>
+										</fieldset>
+									</div>
+								</div>
+							</div>
+			            </section>
+						<!-- SECTION 4 -->
+			            <h2>
+			            	<p class="step-icon"><span>04</span></p>
+			            	<span class="step-text">Business Charges</span>
+			            </h2>
+			            <section style="min-height: 415px;">
+			                <div class="inner">
+			                	<div class="wizard-header">
+									<h3 class="heading">Business Charges</h3>
+									<p>Please enter your infomation and proceed to the next step so we can build your accounts. </p>
+								</div>
+								<div class="form-row">
+									<div class="form-holder form-holder-2">
+										<fieldset>
+											<legend>Business Capital</legend>
+											<input type="Number" class="form-control" id="business_capital" name="business_capital" placeholder="Business Capital" required>
+										</fieldset>
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-holder">
+										<fieldset>
+											<legend>Labour Cost</legend>
+											<select style="text-decoration: none; border: 0;" name="labour" id="labour" onchange="showLabour(this);">
+												<option value="Labour" disabled selected>Labour Cost</option>
+												<option value="Yes">Yes</option>
+												<option value="No">No</option>
+											</select>
+											<span class="select-btn">
+											  	<i class="zmdi zmdi-chevron-down"></i>
+											</span>
+										</fieldset>
+									</div>
+									<div class="form-holder" id="labour-cost">
+										<fieldset>
+											<legend>Labour Cost</legend>
+											<input type="Number" class="form-control" id="labour_cost" name="labour_cost" placeholder="Labour Cost" required>
+										</fieldset>
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-holder">
+										<fieldset>
+											<legend>Office Rent</legend>
+											<select style="text-decoration: none; border: 0;" name="office" id="office" onchange="showOfficeRent(this);">
+												<option value="office" disabled selected>Office Rent</option>
+												<option value="Yes">Yes</option>
+												<option value="No">No</option>
+											</select>
+											<span class="select-btn">
+											  	<i class="zmdi zmdi-chevron-down"></i>
+											</span>
+										</fieldset>
+									</div>
+									<div class="form-holder" id="office-rent">
+										<fieldset>
+											<legend>Office Rent</legend>
+											<input type="Number" class="form-control" id="office_rent" name="office_rent" placeholder="Office Rent" required>
+										</fieldset>
+									</div>
+								</div>
+							</div>
+			            </section>
+			            <!-- SECTION 5 -->
+			            <h2>
+			            	<p class="step-icon"><span>05</span></p>
+			            	<span class="step-text">Set Financial Goals</span>
+			            </h2>
+			            <section>
+			                <div class="inner">
+			                	<div class="wizard-header">
+									<h3 class="heading">Set Financial Goals</h3>
+									<p>Please enter your infomation and proceed to the next step so we can build your accounts.</p>
+								</div>
+								<div class="form-row">
+			                		<div class="form-holder form-holder-2">
+			                			<input type="radio" class="radio" name="financial_goal" id="plan-1" value="plan-1">
+			                			<label class="plan-icon plan-1-label" for="plan-1">
+		                					<img src="{% static 'homepages/images/form-v1-icon-2.png' %}" alt="pay-1">
+			                			</label>
+			                			<div class="plan-total">
+		                					<span class="plan-title">Specific Plan</span>
+		                					<p class="plan-text">Pellentesque nec nam aliquam sem et volutpat consequat mauris nunc congue nisi.</p>
+		                				</div>
+			                			<input type="radio" class="radio" name="financial_goal" id="plan-2" value="plan-2">
+			                			<label class="plan-icon plan-2-label" for="plan-2">
+			                					<img src="{% static 'homepages/images/form-v1-icon-2.png' %}" alt="pay-1">
+			                			</label>
+			                			<div class="plan-total">
+		                					<span class="plan-title">Medium Plan</span>
+		                					<p class="plan-text">Pellentesque nec nam aliquam sem et volutpat consequat mauris nunc congue nisi.</p>
+		                				</div>
+										<input type="radio" class="radio" name="financial_goal" id="plan-3" value="plan-3" checked>
+										<label class="plan-icon plan-3-label" for="plan-3">
+		                					<img src="{% static 'homepages/images/form-v1-icon-3.png' %}" alt="pay-2">
+										</label>
+										<div class="plan-total">
+		                					<span class="plan-title">Special Plan</span>
+		                					<p class="plan-text">Pellentesque nec nam aliquam sem et volutpat consequat mauris nunc congue nisi.</p>
+		                				</div>
+			                		</div>
+			                	</div>
+							</div>
+			            </section>
+		        	</div>
+		        </form>
+			</div>
+		</div>
+	</div>
+	<script src="{% static 'homepages/js/jquery-3.3.1.min.js' %}"></script>
+	<script src="{% static 'homepages/js/jquery.steps.js' %}"></script>
+	<script src="{% static 'homepages/js/main.js' %}"></script>
+	<script type="text/javascript">
+		function showLabour(labour) {
+			if ( "Yes" == labour.value ) {
+				$("#labour-cost").show();
+			} else {
+				$("#labour-cost").hide();
+			}
+		}
+		function showOfficeRent(office) {
+			if ( "Yes" == office.value ) {
+				$("#office-rent").show();
+			} else {
+				$("#office-rent").hide();
+			}
+		}
+		$("#labour-cost").hide();
+		$("#office-rent").hide();
+	</script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!--================Header Menu Area =================-->
+{% extends 'homepages/header.html' %}
+<!--================End Header Menu Area =================-->
+{% load static %}
+<!--================Title For The Page =================-->
+{% block title %} Services {% endblock %}
+<!--================End Title For The Page =================-->
+
+{% block body %}
+
+    <!--================Banner Area =================-->
+    <section class="banner_area">
+        <div class="container">
+            <div class="banner_inner_text">
+                <h2>Services</h2>
+                <p>See what we do best</p>
+            </div>
+        </div>
+    </section>
+    <!--================End Banner Area =================-->
+
+    <!--================End Banner Area =================-->
+    <section class="service_feature">
+        <div class="container">
+            <div class="row feature_inner">
+                <div class="col-lg-4 col-sm-6">
+                    <div class="feature_item">
+                        <div class="f_icon">
+                            <img src="{% static 'homepages/images/icon/f-icon-1.png' %}" alt="">
+                        </div>
+                        <h4>Expense Manager</h4>
+                        <p>Manage your financial activities from a simple and interactive layout. See your predicted saving amount and act in order to increase them with our suggestions. </p>
+                        <a class="more_btn" href="#">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="feature_item">
+                        <div class="f_icon">
+                            <img src="{% static 'homepages/images/icon/f-icon-2.png' %}" alt="">
+                        </div>
+                        <h4>Shopping List</h4>
+                        <p>Now it is easier to control your financial resources with Finance's newest feature, which allows you to control your daily Shopping Lists and dreams. </p>
+                        <a class="more_btn" href="#">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="feature_item">
+                        <div class="f_icon">
+                            <img src="{% static 'homepages/images/icon/f-icon-3.png' %}" alt="">
+                        </div>
+                        <h4>Calendar</h4>
+                        <p>Add past, future or recurring transactions and categorize them with a bit of AI help. Track them on mobile and plan ahead on the web, or just mix things up. </p>
+                        <a class="more_btn" href="#">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="feature_item">
+                        <div class="f_icon">
+                            <img src="{% static 'homepages/images/icon/f-icon-4.png' %}" alt="">
+                        </div>
+                        <h4>Offline Support</h4>
+                        <p>Providing service to the user even when he goes offline. Internet connection not require for accessing Application </p>
+                        <a class="more_btn" href="#">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="feature_item">
+                        <div class="f_icon">
+                            <img src="{% static 'homepages/images/icon/f-icon-5.png' %}" alt="">
+                        </div>
+                        <h4>Fast Service</h4>
+                        <p>This Application provides quick access to the services. It happens quickly. </p>
+                        <a class="more_btn" href="#">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="feature_item">
+                        <div class="f_icon">
+                            <img src="{% static 'homepages/images/icon/f-icon-6.png' %}" alt="">
+                        </div>
+                        <h4>Group Split</h4>
+                        <p>This service help to split expenses in group and it is easy to use. </p>
+                        <a class="more_btn" href="#">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--================End Banner Area =================-->
+
+    <!--================Circle Chart Area =================-->
+    <section class="circle_chart_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="circle_progress circular style-polygon" data-percentage="75" data-thickness="3" data-reverse="true" data-empty-fill="transparent" data-start-color="#987dff" data-end-color="#7acaff">
+                        <div class="circle_progress_inner">
+                            <strong></strong>
+                            <span class="percentage"></span>
+                            <h4>Hard work</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="circle_progress circular style-polygon" data-percentage="83" data-thickness="3" data-reverse="true" data-empty-fill="transparent" data-start-color="#987dff" data-end-color="#7acaff">
+                        <div class="circle_progress_inner">
+                            <strong></strong>
+                            <span class="percentage"></span>
+                            <h4>Creativity</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="circle_progress circular style-polygon" data-percentage="25" data-thickness="3" data-reverse="true" data-empty-fill="transparent" data-start-color="#987dff" data-end-color="#7acaff">
+                        <div class="circle_progress_inner">
+                            <strong></strong>
+                            <span class="percentage"></span>
+                            <h4>Good luck</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="circle_progress circular style-polygon" data-percentage="95" data-thickness="3" data-reverse="true" data-empty-fill="transparent" data-start-color="#987dff" data-end-color="#7acaff">
+                        <div class="circle_progress_inner">
+                            <strong></strong>
+                            <span class="percentage"></span>
+                            <h4>Development</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--================End Circle Chart Area =================-->
+
+{% endblock %}

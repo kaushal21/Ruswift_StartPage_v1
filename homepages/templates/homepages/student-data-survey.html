@@ -1,0 +1,221 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <link rel="icon" href="{% static 'homepages/images/fav-ethereum.png' %}" type="image/x-icon" />
+	<title>Ruswift - Student Data Survey</title>
+	<!-- Mobile Specific Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!-- Font-->
+	<link rel="stylesheet" type="text/css" href="{% static 'homepages/css/opensans-font.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'homepages/fonts/material-design-iconic-font/css/material-design-iconic-font.min.css' %}">
+	<!-- Main Style Css -->
+    <link rel="stylesheet" href="{% static 'homepages/css/user-data-survey-style.css' %}"/>
+</head>
+<body>
+	<div class="page-content">
+		<div class="form-v1-content">
+			<div class="wizard-form">
+		        <form class="form-register" action="#" method="post">
+		        	<div id="form-total">
+		        		<!-- SECTION 1 -->
+			            <h2>
+			            	<p class="step-icon"><span>01</span></p>
+			            	<span class="step-text">College Information</span>
+			            </h2>
+			            <section>
+			                <div class="inner">
+			                	<div class="wizard-header">
+									<h3 class="heading">College Information</h3>
+									<p>Please enter your information and proceed to the next step so we can build your accounts. </p>
+								</div>
+								<div class="form-row">
+									<div class="form-holder form-holder-2">
+										<fieldset>
+											<legend>College Fee's</legend>
+											<input type="Number" class="form-control" id="college_fee" name="college_fee" placeholder="College Fee's" required>
+										</fieldset>
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-holder form-holder-2">
+										<fieldset>
+											<legend>Hostel</legend>
+											<select style="text-decoration: none; border: 0;" name="hostel" id="hostel" onchange="showHostelers(this);">
+												<option value="Hosteler" disabled selected>Hosteler</option>
+												<option value="Yes">Yes</option>
+												<option value="No">No</option>
+											</select>
+											<span class="select-btn">
+											  	<i class="zmdi zmdi-chevron-down"></i>
+											</span>
+										</fieldset>
+									</div>
+								</div>
+								<div class="form-row" id="Hostelers">
+									<div class="form-holder">
+										<fieldset>
+											<legend>Hostel Fee's</legend>
+											<input type="Number" class="form-control" id="hostel_fee" name="hostel_fee" placeholder="Hostel Fee's">
+										</fieldset>
+									</div>
+									<div class="form-holder">
+										<fieldset>
+											<legend>Mess Charges</legend>
+											<input type="Number" class="form-control" id="mess" name="mess" placeholder="Mess Charges">
+										</fieldset>
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-holder form-holder-2">
+										<fieldset>
+											<legend>Canteen Charges</legend>
+											<input type="Number" class="form-control" id="canteen" name="canteen" placeholder="Canteen" required>
+										</fieldset>
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-holder form-holder-2">
+										<fieldset>
+											<legend>Stationary Charges</legend>
+											<input type="Number" class="form-control" id="stationary" name="stationary" placeholder="Stationary Charges" required>
+										</fieldset>
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-holder form-holder-2">
+										<fieldset>
+											<legend>Pocket Money</legend>
+											<input type="Number" class="form-control" id="pocket_money" name="pocket_money" placeholder="Pocket Money" required>
+										</fieldset>
+									</div>
+								</div>
+							</div>
+			            </section>
+						<!-- SECTION 2 -->
+			            <h2>
+			            	<p class="step-icon"><span>02</span></p>
+			            	<span class="step-text">Entertainment Charges</span>
+			            </h2>
+			            <section>
+			                <div class="inner">
+			                	<div class="wizard-header">
+									<h3 class="heading">Entertainment Charges</h3>
+									<p>Please enter your infomation and proceed to the next step so we can build your accounts. </p>
+								</div>
+								<div class="form-row">
+									<div class="form-holder form-holder-2">
+										<fieldset>
+											<legend>Data / Phone Charges</legend>
+											<input type="Number" class="form-control" id="data_charges" name="data_charges" placeholder="Data / Phone Charges" required>
+										</fieldset>
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-holder">
+										<fieldset>
+											<legend>Movies/Month</legend>
+											<input type="Number" class="form-control" id="movies_month" name="movies_month" placeholder="Movies/Month" required>
+										</fieldset>
+									</div>
+									<div class="form-holder">
+										<fieldset>
+											<legend>Movies Charge</legend>
+											<input type="Number" class="form-control" id="movies_charges" name="movies_charges" placeholder="Movies Charges" required>
+										</fieldset>
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-holder form-holder-2">
+										<fieldset>
+											<legend>Club / Pub Charges</legend>
+											<input type="Number" class="form-control" id="club_charges" name="club_charges" placeholder="Club / Pub Charges" required>
+										</fieldset>
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-holder">
+										<fieldset>
+											<legend>Dinning/Month</legend>
+											<input type="Number" class="form-control" id="dinning_month" name="dinning_month" placeholder="Dinning/Month" required>
+										</fieldset>
+									</div>
+									<div class="form-holder">
+										<fieldset>
+											<legend>Dinning Cost</legend>
+											<input type="Number" class="form-control" id="dinning_charges" name="dinning_charges" placeholder="Dinning Cost" required>
+										</fieldset>
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-holder form-holder-2">
+										<fieldset>
+											<legend>Transport Charges</legend>
+											<input type="Number" class="form-control" id="transport" name="transport" placeholder="Transport Charges" required>
+										</fieldset>
+									</div>
+								</div>
+							</div>
+			            </section>
+			            <!-- SECTION 3 -->
+			            <h2>
+			            	<p class="step-icon"><span>03</span></p>
+			            	<span class="step-text">Set Financial Goals</span>
+			            </h2>
+			            <section>
+			                <div class="inner">
+			                	<div class="wizard-header">
+									<h3 class="heading">Set Financial Goals</h3>
+									<p>Please enter your infomation and proceed to the next step so we can build your accounts.</p>
+								</div>
+								<div class="form-row">
+			                		<div class="form-holder form-holder-2">
+			                			<input type="radio" class="radio" name="financial_goal" id="plan-1" value="plan-1">
+			                			<label class="plan-icon plan-1-label" for="plan-1">
+		                					<img src="{% static 'homepages/images/form-v1-icon.png' %}" alt="pay-1">
+			                			</label>
+			                			<div class="plan-total">
+		                					<span class="plan-title">Specific Plan</span>
+		                					<p class="plan-text">Pellentesque nec nam aliquam sem et volutpat consequat mauris nunc congue nisi.</p>
+		                				</div>
+			                			<input type="radio" class="radio" name="financial_goal" id="plan-2" value="plan-2">
+			                			<label class="plan-icon plan-2-label" for="plan-2">
+			                					<img src="{% static 'homepages/images/form-v1-icon-2.png' %}" alt="pay-1">
+			                			</label>
+			                			<div class="plan-total">
+		                					<span class="plan-title">Medium Plan</span>
+		                					<p class="plan-text">Pellentesque nec nam aliquam sem et volutpat consequat mauris nunc congue nisi.</p>
+		                				</div>
+										<input type="radio" class="radio" name="financial_goal" id="plan-3" value="plan-3" checked>
+										<label class="plan-icon plan-3-label" for="plan-3">
+		                					<img src="{% static 'homepages/images/form-v1-icon-3.png' %}" alt="pay-2">
+										</label>
+										<div class="plan-total">
+		                					<span class="plan-title">Special Plan</span>
+		                					<p class="plan-text">Pellentesque nec nam aliquam sem et volutpat consequat mauris nunc congue nisi.</p>
+		                				</div>
+			                		</div>
+			                	</div>
+							</div>
+			            </section>
+		        	</div>
+		        </form>
+			</div>
+		</div>
+	</div>
+	<script src="{% static 'homepages/js/jquery-3.3.1.min.js' %}"></script>
+	<script src="{% static 'homepages/js/jquery.steps.js' %}"></script>
+	<script src="{% static 'homepages/js/main.js' %}"></script>
+	<script type="text/javascript">
+		function showHostelers(hostel) {
+			if ( "Yes" == hostel.value ) {
+				$("#Hostelers").show();
+			} else {
+				$("#Hostelers").hide();
+			}
+		}
+		$("#Hostelers").hide();
+	</script>
+</body>
+</html>

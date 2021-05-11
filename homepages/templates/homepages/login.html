@@ -1,0 +1,111 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <link rel="icon" href="{% static 'homepages/images/fav-ethereum.png' %}" type="image/x-icon" />
+	<title>Ruswift - Login</title>
+	<!-- Mobile Specific Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!-- Font-->
+	<link rel="stylesheet" type="text/css" href="{% static 'homepages/css/nunito-font.css' %}">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- Main Style Css -->
+    <link rel="stylesheet" href="{% static 'homepages/css/login-style.css' %}"/>
+    <style type="text/css">
+	    .icon {
+			border-radius: 15px;
+			-o-border-radius: 15px;
+			-ms-border-radius: 15px;
+			-moz-border-radius: 15px;
+			-webkit-border-radius: 15px;
+			box-shadow: 0px 6px 17px 0px rgba(0, 0, 0, 0.15);
+			-o-box-shadow: 0px 6px 17px 0px rgba(0, 0, 0, 0.15);
+			-ms-box-shadow: 0px 6px 17px 0px rgba(0, 0, 0, 0.15);
+			-moz-box-shadow: 0px 6px 17px 0px rgba(0, 0, 0, 0.15);
+			-webkit-box-shadow: 0px 6px 17px 0px rgba(0, 0, 0, 0.15);
+			padding: 5px 0 5px 0;
+			color: #fff;
+		   	font-weight: 500;
+		   	font-size: 20px;
+		   	border: none;
+		   	justify-content: center;
+		   	flex-direction: center;
+		   	text-align: center;
+			width: 35px;
+			margin: 0px 10px 50px 0px;
+			cursor: pointer;
+	    }
+	    .icon-google {
+	    	background-color: #dd4b39;
+	    }
+		.icon-facebook{
+			background-color: #3b5999;
+		}
+		.icon-google:hover {
+			background: #B3392A;
+		}
+		.icon-facebook:hover {
+			background: #293F6E;
+		}
+		a {
+			text-decoration: none;
+			font-family: 'Nunito', sans-serif;
+		    font-size: 16px;
+		    font-weight: 700;
+			color: #fff;
+		}
+		a:hover {
+			color: #ccc;
+		}
+		.login-btn {
+			margin: 10px 0 8px 0px;
+		}
+		.diff-login-option a{
+			padding-top: 10px;
+		}
+		.space-between {
+			padding-bottom: 10px;
+		}
+    </style>
+</head>
+<body class="form-v9">
+	<div class="page-content">
+		<div class="form-v9-content">
+			<form class="form-detail" action="/postlogin/" method="POST">
+{% csrf_token %}
+                <h2>Login Form</h2>
+				<div class="form-row-total">
+					<div class="form-row">
+						<input type="text" name="your-email" id="your-email" class="input-text" placeholder="Your Email" required pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}">
+					</div>
+				</div>
+				<div class="form-row-total">
+					<div class="form-row">
+						<input type="password" name="password" id="password" class="input-text" placeholder="Your Password" required>
+					</div>
+				</div>
+				<div class="form-row-last">
+					<input type="submit" name="register" class="register" value="Login">
+				</div>
+				<div class="form-row-last">
+					<div class="login-btn">
+						<label>Don't Have An Account? <a href="{% url 'sing-up' %}">Sign Up</a></label>
+					</div>
+					<div class="diff-login-option">
+						<div class="space-between"><label>Login With</label><br></div>
+						<div>
+							<a href="#">
+								<span class="fa fa-google-plus icon icon-google"></span>
+							</a>
+							<a href="#">
+								<span class="fa fa-facebook-f icon icon-facebook"></span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
